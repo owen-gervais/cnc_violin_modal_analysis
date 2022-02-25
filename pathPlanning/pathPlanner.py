@@ -173,7 +173,7 @@ class ImpactHammerPathPlanner:
 
 
 if __name__ == "__main__":
-    violin = Mesh("/Users/owengervais/vrev4.stl")
+    violin = Mesh("vrev4.stl")
     path = ImpactHammerPathPlanner(violin, stepSize=40, midlineOffset=20, yDatumOffset=70)
     path.outputSTLTraits()
     path.generateGCODE(path.rightIntersectionPoints, writeFile=True, fileName = "rightPoints.gcode", right=True, hammerOffset=True)
